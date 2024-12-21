@@ -1,0 +1,76 @@
+/* clock.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(to right, #1e3c72, #2a5298); */
+    background-color: rgb(25, 24, 24);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
+    width: 300px;
+    
+}
+#container
+{
+    /* transform: scale(1.1); */
+    animation: clockblink 1s infinite
+}
+#date {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #f8f9fa;
+    font-weight: bold;
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f1c40f;
+}
+
+#clock div {
+    margin: 0 5px;
+}
+
+#hours, #minutes, #sec {
+    padding: 0 5px;
+}
+
+#point {
+    animation: blink 1s step-start infinite;
+    color: #e74c3c;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes clockblink
+{
+    50%
+    {
+        transform: scale(1.1);
+    }
+}
+h1{
+    font-size: 50px;
+}
